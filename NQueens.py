@@ -45,7 +45,7 @@ class Board:
             for column in range(self.size):
                 if (not self.under_attack(Queen(row, column))) and (self.field[row][column] != 1):
                     self.fill_place(row, column)
-                    if self.place_queens(_size - 1) == True:
+                    if self.place_queens(_size - 1):
                         return True
                     self.set_free(row, column)
         return False
