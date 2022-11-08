@@ -2,8 +2,8 @@
 index = list()
 alphabetized_index = list()
 
-id_start_line = list()
-id_end_line = list()
+id_start_line = list() # list of start postions of lines
+id_end_line = list()   # list of end position of lines
 
 
 def input_strings():
